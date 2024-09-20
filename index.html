@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarjeta de Presentación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card">
+        <h2 id="nombre">Nombre del Representante</h2>
+        <p id="puesto">Puesto del Representante</p>
+        <button id="editarBtn">Editar</button>
+        <button id="mostrarBtn">Mostrar</button>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="cerrar" class="cerrar">&times;</span>
+            <form id="formulario">
+                <label for="nuevoNombre">Nuevo Nombre:</label>
+                <input type="text" id="nuevoNombre" name="nuevoNombre" required>
+                <label for="nuevoPuesto">Nuevo Puesto:</label>
+                <input type="text" id="nuevoPuesto" name="nuevoPuesto" required>
+                <button type="submit">Guardar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
